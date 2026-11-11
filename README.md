@@ -95,6 +95,7 @@ Add `--scope user` to make it available in every project. Check with `claude mcp
 
 This server does **not** bundle a code lookup: the full list has more than 80,000 villages, and BMKG does not publish a search endpoint for it. Ways to find a code:
 
+0. **Easiest:** add the companion server [mcp-wilayah-indonesia](https://github.com/EzkielynaGroup/mcp-wilayah-indonesia) (`npx -y mcp-wilayah-indonesia`, offline). Its `cari_wilayah` tool finds a village by name and returns `bmkg_adm4`, so you can ask "cuaca besok di Kemayoran" and the assistant chains both servers.
 1. The Kemendagri decision on region codes (the attachment lists every village with its code).
 2. Community datasets on GitHub that republish the Kemendagri list (search "kode wilayah kemendagri"). Check their license and which decision year they follow.
 3. Statistics Indonesia (BPS) uses its own codes, which do not always match Kemendagri codes. Do not mix them.
@@ -168,7 +169,7 @@ Server MCP untuk **data gempabumi dan prakiraan cuaca per kelurahan/desa dari da
 
 **Pasang**: tambahkan `npx -y mcp-bmkg` ke aplikasi Anda (contoh konfigurasi Claude Desktop, Claude Code, Cursor, OpenCode ada di atas). Di Windows gunakan `cmd /c npx -y mcp-bmkg` bila `npx` tidak bisa dijalankan langsung.
 
-**Kode adm4**: kode wilayah Kemendagri tingkat IV (kelurahan/desa), format `00.00.00.0000`, contoh `31.71.03.1001` (Kemayoran). BMKG merujuk Kepmendagri Nomor 100.1.1-6117 Tahun 2022. Server ini tidak menyertakan daftar kode (lebih dari 80.000 desa); cari di lampiran keputusan Kemendagri atau dataset komunitas yang menyalinnya (periksa lisensinya). Kode BPS berbeda, jangan dicampur.
+**Kode adm4**: kode wilayah Kemendagri tingkat IV (kelurahan/desa), format `00.00.00.0000`, contoh `31.71.03.1001` (Kemayoran). BMKG merujuk Kepmendagri Nomor 100.1.1-6117 Tahun 2022. Server ini tidak menyertakan daftar kode (lebih dari 80.000 desa). Cara termudah: pasang juga [mcp-wilayah-indonesia](https://github.com/EzkielynaGroup/mcp-wilayah-indonesia) (`npx -y mcp-wilayah-indonesia`, offline); alat `cari_wilayah` mencari desa dari namanya dan memberi `bmkg_adm4`. Atau cari di lampiran keputusan Kemendagri atau dataset komunitas yang menyalinnya (periksa lisensinya). Kode BPS berbeda, jangan dicampur.
 
 **Sumber dan ketentuan**: semua data diambil langsung dari BMKG (data.bmkg.go.id dan api.bmkg.go.id). BMKG mewajibkan pengguna mencantumkan BMKG sebagai sumber data dan menampilkannya di aplikasi, dengan batas akses 60 permintaan per menit per IP. Karena itu setiap jawaban berakhir dengan "Sumber: BMKG" beserta waktu pengambilan (WIB), dan jawaban di-cache 60 detik. Proyek ini independen dan tidak berafiliasi dengan BMKG. Field `tp` pada prakiraan tidak dijelaskan oleh BMKG; kami menampilkannya sebagai `precipitation_mm` (belum terverifikasi).
 
