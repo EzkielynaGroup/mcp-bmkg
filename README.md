@@ -1,5 +1,9 @@
 # mcp-bmkg
 
+<!-- ezk:badges -->
+[![npm](https://img.shields.io/npm/v/mcp-bmkg?color=c2410c)](https://www.npmjs.com/package/mcp-bmkg) [![CI](https://github.com/EzkielynaGroup/mcp-bmkg/actions/workflows/test.yml/badge.svg)](https://github.com/EzkielynaGroup/mcp-bmkg/actions/workflows/test.yml) [![MCP Registry](https://img.shields.io/badge/MCP_Registry-io.github.EzkielynaGroup%2Fmcp--bmkg-1f6feb)](https://registry.modelcontextprotocol.io/v0/servers?search=io.github.EzkielynaGroup/mcp-bmkg) [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+<!-- /ezk:badges -->
+
 An [MCP](https://modelcontextprotocol.io) server that gives your AI assistant **Indonesian earthquake data and village-level weather forecasts from BMKG open data**. No API key, no account, one file, zero dependencies.
 
 Example: *"Was there a strong earthquake in Indonesia today? And what's the weather in Kemayoran (31.71.03.1001) tomorrow afternoon?"*
@@ -182,3 +186,17 @@ Made by Ezkielyna, an independent AI API gateway for Indonesian developers (QRIS
 ## License
 
 MIT for the code. Data belongs to BMKG and is fetched at runtime under BMKG's open data terms (credit "BMKG" as the source).
+
+<!-- ezk:toolkit -->
+---
+
+### Part of the Ezkielyna developer toolkit
+
+Open-source tools from [Ezkielyna](https://ezkielyna.store/?utm_source=github&utm_medium=readme&utm_campaign=mcp-bmkg), an independent OpenAI- and Anthropic-compatible AI API gateway (pay with QRIS, USDT or Binance Pay; no credit card).
+
+| No API key needed | With an Ezkielyna key |
+|---|---|
+| [mcp-bmkg](https://github.com/EzkielynaGroup/mcp-bmkg) · [mcp-wilayah-indonesia](https://github.com/EzkielynaGroup/mcp-wilayah-indonesia) · [mcp-hari-libur-indonesia](https://github.com/EzkielynaGroup/mcp-hari-libur-indonesia) · [mcp-rupiah](https://github.com/EzkielynaGroup/mcp-rupiah) · [mcp-qris](https://github.com/EzkielynaGroup/mcp-qris) · [ai-model-status-mcp](https://github.com/EzkielynaGroup/ai-model-status-mcp) | [ezkielyna-mcp](https://github.com/EzkielynaGroup/ezkielyna-mcp) · [ezkielyna-image-mcp](https://github.com/EzkielynaGroup/ezkielyna-image-mcp) · [ezkielyna-audio-mcp](https://github.com/EzkielynaGroup/ezkielyna-audio-mcp) · [n8n-nodes-ezkielyna](https://github.com/EzkielynaGroup/n8n-nodes-ezkielyna) |
+
+More: [all repositories](https://github.com/EzkielynaGroup) · [awesome-mcp-indonesia](https://github.com/EzkielynaGroup/awesome-mcp-indonesia) · [awesome-ai-indonesia](https://github.com/EzkielynaGroup/awesome-ai-indonesia)
+<!-- /ezk:toolkit -->
