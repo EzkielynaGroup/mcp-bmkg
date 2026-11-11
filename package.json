@@ -1,0 +1,46 @@
+{
+  "name": "mcp-bmkg",
+  "version": "1.0.0",
+  "description": "MCP server for Indonesian earthquake and village weather forecast data from BMKG open data. No API key.",
+  "mcpName": "io.github.EzkielynaGroup/mcp-bmkg",
+  "type": "module",
+  "bin": {
+    "mcp-bmkg": "mcp-bmkg.mjs"
+  },
+  "files": [
+    "mcp-bmkg.mjs",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test test/"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "bmkg",
+    "gempa",
+    "earthquake",
+    "cuaca",
+    "weather",
+    "prakiraan-cuaca",
+    "indonesia",
+    "claude-desktop",
+    "claude-code",
+    "cursor",
+    "opencode"
+  ],
+  "author": "Ezekiel Lieberhart (Ezkielyna)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EzkielynaGroup/mcp-bmkg.git"
+  },
+  "homepage": "https://github.com/EzkielynaGroup/mcp-bmkg#readme",
+  "bugs": {
+    "url": "https://github.com/EzkielynaGroup/mcp-bmkg/issues"
+  }
+}

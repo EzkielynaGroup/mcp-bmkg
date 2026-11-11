@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.EzkielynaGroup/mcp-bmkg",
+  "title": "BMKG Gempa & Cuaca",
+  "description": "Indonesian earthquakes and village weather forecasts from BMKG open data. No API key.",
+  "repository": {
+    "url": "https://github.com/EzkielynaGroup/mcp-bmkg",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "mcp-bmkg",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "MCP_BMKG_TIMEOUT_MS",
+          "description": "Timeout per BMKG request in ms (default 10000)",
+          "isRequired": false,
+          "format": "string"
+        },
+        {
+          "name": "MCP_BMKG_CACHE_MS",
+          "description": "Cache lifetime per URL in ms (default 60000)",
+          "isRequired": false,
+          "format": "string"
+        },
+        {
+          "name": "MCP_BMKG_BASE_URL",
+          "description": "Override base URL for both BMKG hosts (tests or mirrors)",
+          "isRequired": false,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
